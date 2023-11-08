@@ -4,15 +4,15 @@
 <html>
 <head>
 <title>Tutors</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Tutors</h1>
 <ul>
-<li>John Smith</li>
-<li>Jane Doe</li>
-<li>Bill Jones</li>
+{% for tutor in tutors %}
+<li>{{ tutor.name }}</li>
+{% endfor %}
 </ul>
-<a href="/">Home</a>
 </body>
 </html>
 
